@@ -22,7 +22,7 @@ guhyun 객체에서 속성에 접근하여 출력
 
 # Inheritance
 
-```
+```java
 class Person {
     int age;
     String name;
