@@ -97,3 +97,50 @@ public class Main {
 Person 인터페이스 정의 ->
 Student 클래스가 Person 인터페이스를 구현 ->
 Main 클래스에서 stuent 객체 생성 및 출력 
+
+# Method
+```java
+class Person {
+    private int age;
+    private String name;
+
+    public Person(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+class Student extends Person {
+    private String school;
+
+    public Student(int age, String name, String school) {
+        super(age, name);
+        this.school = school;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void printStudentInfo() {
+        System.out.println("Age: " + getAge());
+        System.out.println("Name: " + getName());
+        System.out.println("School: " + getSchool());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student(17, "김구현", "경소고");
+        student.printStudentInfo();
+    }
+}
+```
