@@ -144,4 +144,7 @@ public class Main {
     }
 }
 ```
-Person 클래스 정의
+Person 클래스 정의 ->
+Student class 정의 ->
+Main class에서 student객체 생성 및 학생정보 출력
+
