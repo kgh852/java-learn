@@ -20,6 +20,22 @@ person class 정의 ->
 person class 인스턴스를 바탕으로 guhyun 객체 생성 ->
 guhyun 객체에서 속성에 접근하여 출력
 
+# Method
+```java
+public class Main {
+    static void myMethod() {
+        System.out.println("김구현");
+    }
+
+    public static void main(String[] args) {
+        myMethod();
+    }
+}
+
+```
+myMethod 생성 ->
+myMethod 값 출력
+
 # Inheritance
 
 ```java
@@ -97,56 +113,6 @@ public class Main {
 Person 인터페이스 정의 ->
 Student 클래스가 Person 인터페이스를 구현 ->
 Main 클래스에서 stuent 객체 생성 및 출력 
-
-# Method
-```java
-class Person {
-    private int age;
-    private String name;
-
-    public Person(int age, String name) {
-        this.age = age;
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
-}
-
-class Student extends Person {
-    private String school;
-
-    public Student(int age, String name, String school) {
-        super(age, name);
-        this.school = school;
-    }
-
-    public String getSchool() {
-        return school;
-    }
-
-    public void printStudentInfo() {
-        System.out.println("Age: " + getAge());
-        System.out.println("Name: " + getName());
-        System.out.println("School: " + getSchool());
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Student student = new Student(17, "김구현", "경소고");
-        student.printStudentInfo();
-    }
-}
-```
-Person 클래스 정의 ->
-Student class 정의 ->
-Main class에서 student객체 생성 및 학생정보 출력
 
 # Encapsulation
 ```java
