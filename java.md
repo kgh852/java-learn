@@ -148,3 +148,28 @@ Person 클래스 정의 ->
 Student class 정의 ->
 Main class에서 student객체 생성 및 학생정보 출력
 
+# Encapsulation
+```java
+class Person {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person myObj = new Person();
+        myObj.setName("김구현");
+        System.out.println(myObj.getName());
+    }
+}
+```
+Person 클래스 정의 ->
+
+
